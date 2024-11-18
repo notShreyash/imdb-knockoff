@@ -1,0 +1,53 @@
+/* src/components/SearchBar/SearchBar.css */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px; /* Rounded corners for a sleek look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 5px; /* Padding around the elements */
+    margin: 1rem auto; /* Centering the search bar with auto margins */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Extended width for more prominence */
+    position: relative;
+}
+
+.search-box input {
+    height: 35px; /* Consistent height */
+    width: 100%; /* Full width inside the container */
+    padding: 0 15px; /* Padding inside the input */
+    border: none;
+    border-radius: 20px; /* Match the container’s rounded corners */
+    font-size: 14px; /* Slightly smaller text size */
+    box-shadow: none; /* Remove default shadow */
+    outline: none; /* Remove default outline */
+}
+
+.search-box input::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-size: 14px; /* Placeholder text size */
+}
+
+.search-box input:focus {
+    border: 2px solid #9579db; /* Subtle border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow on focus */
+}
+
+.search-box button {
+    height: 35px; /* Match input height */
+    padding: 0 20px; /* Horizontal padding for button */
+    margin-left: 10px; /* Space between input and button */
+    color: #fff; /* White text */
+    background-color: #9579db; /* Blue color for button */
+    border: none;
+    border-radius: 20px; /* Match the container’s rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Matching font size with input */
+    font-weight: 500; /* Slightly lighter font weight */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.search-box button:hover {
+    background-color: #7d5fae; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly enlarge button on hover */
+}
